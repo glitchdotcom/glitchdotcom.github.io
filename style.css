@@ -2,7 +2,7 @@
 :root {
   /* Generic sizing for the page */
   --wrapper-height: 80vh;
-  --avatar-max-width: 15rem;
+  --avatar-max-width: 8rem;
 
   /* Fonts for different elements */
   --font-family: sans-serif;
@@ -44,7 +44,6 @@ body {
 
 /* Typography */
 p {
-  margin: 0 0 1rem 0;
   line-height: 1.5 !important;
 }
 h1,
@@ -60,14 +59,13 @@ h1 {
   justify-content: center;
 }
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
-	display: flex;
-	gap: 1em;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 2rem;
-    background-color: var(--color-header);
+  border-bottom: 1px dashed var(--color-gray-20);
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
 }
 
 /* Link styles */
@@ -90,28 +88,18 @@ a.remix:hover {
   color:var(--color-bg-alt);
   border-color: var(--color-primary);
 }
-header {
-  text-align: left;
-  margin-bottom: 1rem;
-}
 .img-container {
   display: flex;
   justify-content: flex-end;
 }
 .illustration {
   max-height: var(--avatar-max-width);
-  margin: 1rem 2rem 0 0;
-  transform: rotate(10deg);
 }
 /* Navigation grid */
 .footer {
   display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 2rem 0 2rem 0;
   width: 100%;
   flex-wrap: wrap;
-  background-color: var(--color-header);
   justify-content: flex-end;
 }
 a.remix {
@@ -120,8 +108,7 @@ a.remix {
   border-radius: 5px;
   padding: 0.5rem;
   font-weight: bold;
-  margin-right:1rem;
 }
 .instructions {
-    padding:2rem;
+    padding:1rem 0 1rem 0;
 }
